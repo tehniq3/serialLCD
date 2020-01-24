@@ -13,7 +13,7 @@
 // back. 
 //
 
-SoftwareSerial NSS(255,13,1);
+SoftwareSerial NSS(255,13,1);   // GPIO13 = D7 on NodeMCU
 SerLCD lcd(NSS,20,4); 
 
 #define gol 160
@@ -33,8 +33,8 @@ int x = 0;
 
 
 NTPtime NTPch("ch.pool.ntp.org");   // Choose server pool as required
-char *ssid      = "bbk2";               // Set you WiFi SSID
-char *password  = "internet2";               // Set you WiFi password
+char *ssid      = "network_name";           // Set you WiFi SSID
+char *password  = "password";               // Set you WiFi password
 
 /*
  * The structure contains following fields:
