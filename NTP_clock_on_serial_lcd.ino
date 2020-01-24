@@ -433,10 +433,11 @@ x = 11;
   cifra(zminut);
 x = 16;
   cifra(uminut);
+  puls = 10;
 }
 
 //puls = millis()/500;
-puls = puls +1;
+puls = puls -1;
   if (puls%2 == 1)
  {
   lcd.setPosition(2,10); 
